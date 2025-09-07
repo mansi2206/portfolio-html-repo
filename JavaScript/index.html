@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>doing JS in console.</p>
+    <script>
+      console.log(
+        "hello!" +
+          "\n" +
+          "i am mansi srivastava" +
+          "\n" +
+          "i am writing my first JS code"
+      );
+
+      const obj = Object.freeze({
+        name: "Mansi",
+        age: 19,
+      });
+      console.log(obj);
+      obj.name = "Charu";
+      console.log(obj); // it will not change the name as object is frozen. Object.freeze() makes the object immutable.
+
+      let o = {
+        "place of birth": "Varanasi",
+        "Full Name": "Mansi Srivatava",
+        age: 19,
+      };
+      console.log(o);
+      o["Father Name"] = "Ajay Kumar Srivastava";
+      console.log(o); // it will add new key value pair in the object because o is mutuable.
+    </script>
+  </body>
+</html>
